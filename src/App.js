@@ -1,9 +1,9 @@
-import Home from './components/home.js';
+import Head from './components/head.js';
 
 const App = () => {
   return (
     <div>
-      <Home />
+      <Head />
       <p>パレットも見守ってるよ！</p>
     </div>
   );
