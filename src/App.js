@@ -4,7 +4,6 @@ const App = () => {
   return (
     <div>
       <Head />
-      <p>パレットも見守ってるよ！</p>
     </div>
   );
 }
