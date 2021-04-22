@@ -10,7 +10,6 @@ const Head = () => (
         <h1 className="subtitle">あなた好みの</h1>
         <h1 className="subtitle">お肉に</h1>
         <h1 className="subtitle">きっと出会える</h1>
-        <h1 className="subtitle">パレット。</h1>
 
 
     </div>
