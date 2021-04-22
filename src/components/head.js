@@ -1,14 +1,62 @@
 import React from 'react';
-import rogo from './../img/rogo.png';
+import logo from './../img/logo_kuro.png';
+import IconButton from '@material-ui/core/IconButton';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import MoreVertIcon from '@material-ui/icons/MoreVert';
+import './head.css'
 
-const Home = () => (
-  <div>
-    <img src={rogo} className="rogo" width="200px" alt="logo" />
-    <h1>牛とともに生きる。</h1>
-    <h1>食べることは、</h1>
-    <h1>生きること。</h1>
+const options = [
+  'Usi Project について',
+  '食べる',
+  '育てる',
+  '問い合わせ',
+];
 
-  </div>
-);
+const ITEM_HEIGHT = 48;
 
-export default Home
+export default function LongMenu() {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  return (
+    <div className="head">
+      <img src={logo} className="logo" width="120px" alt="logo" />
+      <IconButton
+        aria-label="more"
+        aria-controls="long-menu"
+        aria-haspopup="true"
+        onClick={handleClick}
+      >
+      <MoreVertIcon />
+      </IconButton>
+      <Menu
+        id="long-menu"
+        anchorEl={anchorEl}
+        keepMounted
+        open={open}
+        onClose={handleClose}
+        PaperProps={{
+          style: {
+            maxHeight: ITEM_HEIGHT * 4.5,
+            width: '20ch',
+          },
+        }}
+      >
+        {options.map((option) => (
+          <MenuItem key={option} selected={option === 'Pyxis'} onClick={handleClose}>
+            {option}
+          </MenuItem>
+        ))}
+      </Menu>
+    </div>
+  ); 
+};
