@@ -1,28 +1,31 @@
 .rogo{
-  padding-top: 100px;
-  padding-left: 10%;
+    padding-top: 100px;
+    padding-left: 10%;
 }
 
 .subtitle{
-  font-size:40pt;
-  color: gray;
-  line-height: 1.2;
-  letter-spacing: 0.2em;
-  padding-left: 10%;
-  border-left: solid 20px green；
+    font-size:40pt;
+    color: gray;
+    line-height: 1.2;
+    letter-spacing: 0.2em;
+    padding-left: 10%;
+    border-left: solid 20px green；
+
+
+    
 }
 
 h2{
-  position:relative;
+   position:relative;
 }
 
 h2::before{
-  content:"";
-  display:inline-block;
-  width:3px;
-  height:40px;
-  background-color:#0097A7;
-  position:absolute;
-  top:-2px;
-  left:-5px;
+   content:"";
+   display:inline-block;
+   width:3px;
+   height:40px;
+   background-color:#0097A7;
+   position:absolute;
+   top:-2px;
+   left:-5px;
 }
