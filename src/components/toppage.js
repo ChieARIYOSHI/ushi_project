@@ -74,22 +74,27 @@ const Home = () => (
       </div>
     </div>
 
-    <div className="main_3">
-      <div className="subtitle_3">
+    <div className="main_4">
+      <div className="subtitle_4">
         <h1>Usi Projectについて</h1>
       </div>
-      <div className="message_3">
+      <div className="message_4">
         <p>
           Usi Projectは、どんな人がどんな想いで育てた牛なのかを知っていただき、牛と牧場の方々、そしてあなたを直接繋ぐサービスです。
-          主なサービスは２つ。
-          ❶牧場から直接お肉を購入する
-          ❷牧場の方々と一緒に牛を育てる
-
-          ２つのサービスから自由にお選びいただけます。
         </p>
-        <img src={logo} className="logo" width="120px" alt="logo" />
-        {/* ここに牛アイコンのみverを入れる */}
+        <p>主なサービスは２つ。</p>
+        <p>　❶牧場から直接お肉を購入する</p>
+        <p>　❷牧場の方々と一緒に牛を育てる</p>
+        <p>２つのサービスから自由にお選びいただけます。</p>
+        {/* <div>
+        <img src={logo} className="logo" width="320px" alt="logo" />
+        ここに牛アイコンのみverを入れる
+        </div> */}
       </div>
+    </div>
+
+    <div>
+      
     </div>
   </div>
 );
